@@ -1,6 +1,6 @@
 from data.make_dataset import YahooFinanceScraper
 from data.clean_dataset import pretraitement
-from models.linearmodel import linear_model
+from models.linearmodel import LinearModels
 import os
 import pandas as pd
 
@@ -13,8 +13,10 @@ def main():
     else : 
         # assets = pd.read_csv("C:/Users/Guillaume Baroin/Documents/Programs/asset_prediction/data/processed/action.csv")
         action_asset,variation = pretraitement(chemin="src/data/database/bourse.csv")
-        print(action_asset)
-        linear_model(action_asset,variation)
+        model = LinearModels(action_asset,variation)
+        scikit_model = model.scikit_linear_model()
+        sm_model = model.sm_linear_model()
+
 
 if __name__ =="__main__":
     main()
