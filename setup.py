@@ -5,6 +5,6 @@ setup(
     packages=find_packages(),
     version='0.1.0',
     description='prediction of stock variation',
-    author='Baroin_Guillaule',
+    author='Baroin_Guillaume',
     license='MIT',
 )
