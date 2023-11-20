@@ -57,7 +57,7 @@ def convert_and_multiply(value):
         print("nothing to modify")
         pass
 
-def pretraitement(chemin):
+def Preprocessing(chemin):
     """
     Preprocesses financial data from a CSV file.
 
@@ -81,8 +81,7 @@ def pretraitement(chemin):
         df_asset = df_asset.drop("Unnamed: 0", axis=1)
 
     # Define the columns related to financial actions
-    colonne_action = [
-    "Cap", "Value", "P/E_N-1", "P/E", "PEG_5", "Stock/Sell", "Stock/Compta",
+    colonne_action = ["Cap", "Value", "P/E_N-1", "P/E", "PEG_5", "Stock/Sell", "Stock/Compta",
     "Value/CA", "Value/EBITDA", "Beta_m_5", "Var_52", "Var_S&P", "High", "Low",
     "MA_50", "MA_200", "Vol_Mean_3mo", "Vol_Mean_10d",
     "Pending", "Act_in_circ", "Flottant", "Pct_initiés",
