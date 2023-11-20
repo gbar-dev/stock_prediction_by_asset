@@ -47,7 +47,7 @@ class YahooFinanceScraper:
         # Loop to scrap abbreviation of stock 
         for page in range(self.nb_page + 1):
             response = requests.get(f"https://fr.finance.yahoo.com/screener/99b382c3-38c7-4b52-bd34-0c08ec1385af?count=100&offset={page*100}", headers=self.header)
-            print(response.status_code)
+            assert isinstance(response,requests.Response)
             
             soup = bs(response.text, "html.parser")
             for Mnemo in soup.find_all("a", attrs={"data-test": "quoteLink"}):
