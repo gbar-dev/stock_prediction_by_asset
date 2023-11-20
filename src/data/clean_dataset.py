@@ -134,8 +134,12 @@ def pretraitement(chemin):
 
     # Add back the 'variation' column to the preprocessed DataFrame
     action_finance["variation"] = variation
-    columns = colonne_action - columns_to_drop
+    
+    columns = [x for x in colonne_action if x not in columns_to_drop]
+    
     action_finance.columns = columns
+    action_finance.dropna(axis=1,inplace=True)
+    action_finance.to_csv("src/data/database/bourse_traited.csv")
     # Return the preprocessed data and the 'variation' column
     return action_finance, variation
 
