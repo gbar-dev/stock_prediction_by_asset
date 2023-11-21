@@ -26,8 +26,8 @@ The model is built from a dataset that includes historical stock statistics such
 Clone the GitHub repository and install the necessary dependencies:
 
 ```bash
-git clone https://github.com/your-user/your-project.git
-cd your-project
+git clone [https://github.com/your-user/your-project.git](https://github.com/gbar-dev/stock_prediction_by_asset.git)
+cd stock_prediction_by_asset
 pip install -r requirements.txt
 ```
 
