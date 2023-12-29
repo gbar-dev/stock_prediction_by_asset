@@ -138,7 +138,7 @@ def Preprocessing(chemin):
     
     action_finance.columns = columns
     action_finance.dropna(axis=1,inplace=True)
-    
+    action_finance.to_csv("src/data/database/bourse.csv")
     # Return the preprocessed data and the 'variation' column
     return action_finance, variation
 

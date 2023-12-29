@@ -25,11 +25,12 @@ def main():
     # if bourse.csv doesn't exist, run crawler
     if not os.path.exists("src/data/database/bourse.csv"):
         #crawler yahoo finance
-        scraper = YahooFinanceScraper(0)
+        scraper = YahooFinanceScraper(1)
         #scrap abbreviation
         list_action = scraper.scraper_action()
         #scrap assets
-        action_asset,variation = scraper.scraper_asset(list_action)
+        action_asset= scraper.scraper_asset(list_action)
+        action_asset,variation = Preprocessing(chemin="src/data/database/bourse.csv")
         #instance linearmodels
         model = LinearModels(action_asset,variation)
         #linear models

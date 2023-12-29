@@ -23,7 +23,7 @@ class YahooFinanceScraper:
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
             "Accept-Encoding": "gzip, deflate, br",
             "Accept-Language": "fr,fr-FR;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6",
-            "Cookie": "GUCS=Ac7FZdam; EuConsent=CP1fSAAP1fSAAAOACKFRAaEgAAAAAAAAACiQAAAAAAAA; GUC=AQAACAFlW8ZljEIjUwUk&s=AQAAACuOqVNt&g=ZVp2-A; A1=d=AQABBK92WmUCELxOFh1yaAizXUx-gPSMHG8FEgAACAHGW2WMZeWnJm0AAiAAAAcIqnZaZXTJeaUID48qV4zpQPA01BM9hVQrPAkBBwoBGQ&S=AQAAAjpUad4JWAwrW5z6967R-7E; A1S=d=AQABBK92WmUCELxOFh1yaAizXUx-gPSMHG8FEgAACAHGW2WMZeWnJm0AAiAAAAcIqnZaZXTJeaUID48qV4zpQPA01BM9hVQrPAkBBwoBGQ&S=AQAAAjpUad4JWAwrW5z6967R-7E; A3=d=AQABBK92WmUCELxOFh1yaAizXUx-gPSMHG8FEgAACAHGW2WMZeWnJm0AAiAAAAcIqnZaZXTJeaUID48qV4zpQPA01BM9hVQrPAkBBwoBGQ&S=AQAAAjpUad4JWAwrW5z6967R-7E; cmp=t=1700427441&j=1&u=1---&v=2; OTH=v=2&s=2&d=eyJraWQiOiIwMTY0MGY5MDNhMjRlMWMxZjA5N2ViZGEyZDA5YjE5NmM5ZGUzZWQ5IiwiYWxnIjoiUlMyNTYifQ.eyJjdSI6eyJndWlkIjoiMjJMQTZRTzNSWTVFTUs2QkZYR0RRMkNOVlUiLCJwZXJzaXN0ZW50Ijp0cnVlLCJzaWQiOiJRS3hyVTJibk1XYmUifX0.tkO2YtrsXE6euKv061BVXR9O_y9Tyxq4LmT2vM6bYBBgRqSMHz0OS-9r-07YuyBtBb0h--KDI4jk1fnBPnlEkHoOmSxgBiR9qCbps5Fc5hCyVmfiISU3gm5rpzXA7hSJOJP-UTJ1Rm7x3C2g6_8ZjlR-eoI98jIe-Bb7kkKhPEA; T=af=JnRzPTE3MDA0Mjc0OTkmcHM9c3JqZnRqMEZVX292a3VwLmxWT0x2dy0t&d=bnMBeWFob28BZwEyMkxBNlFPM1JZNUVNSzZCRlhHRFEyQ05WVQFhYwFBRExGaXZQVAFhbAFndWlsbDc3YkBnbWFpbC5jb20Bc2MBZGVza3RvcF93ZWIBZnMBQi4uVy5mSmxXbmJyAXp6AXJibldsQkE3RQFhAVFBRQFsYXQBcmJuV2xCAW51ATA-&kt=EAA2kwym38BUL4C68rMWndsiw--~I&ku=FAAVuL1ZJT9mvqyVymBsgOVp6Mu9TNQCRoGc3nyAuem_Czkcg_zqQLlyrvdqZxNlZOUMaKd1_mX55Pc55LtiILB4TQMELcSJQa3F0N7BAoVAnckW1jIZi_nfkCtrKEbSwqMSd.nMfFeco2vP329N6Ev5mLKzZAWHDBmj6thlt_1Xfs-~E; F=d=8IK1kyM9vGVSVBXSsn9r1MHOHF5daxD1xga47a9ZYO.jsFATHHM-; PH=l=fr-FR; Y=v=1&n=360r7k259fedj&l=1acd63p1mop1le4uwhg6clm76evgdsm8t2uxkn22/o&p=n34vvfr00000000&r=1c9&intl=fr",
+            "Cookie": "F=d=9Yw7Xxc9vNbwF.JX.5S0M8f9Jo1mmK20Y9zZ1fskR1NLNQKFi8He0evq1O8toBylqV8-; PH=l=fr-FR; Y=v=1&n=01q31l92lte96&l=avtdodtl8664bpcl9lxo6fb4fhn0l7hlsns5k4ih/o&p=n34vvfr00000000&r=1bt&intl=fr; GUC=AQAACAFlW5ZljkIgxAS5&s=AQAAAHYlc1O7&g=ZVpSwQ; A1=d=AQABBP25OmQCEM1fKs_f0F5IGor0oJd7eQoFEgAACAGWW2WOZeWjJm0AAiAAAAcI-7k6ZKAwxK8ID6aTWTK88apXGucEEhYT5QkBBwoBKQ&S=AQAAAlxmCpqwT1RQ_PN78ljs15M; A3=d=AQABBP25OmQCEM1fKs_f0F5IGor0oJd7eQoFEgAACAGWW2WOZeWjJm0AAiAAAAcI-7k6ZKAwxK8ID6aTWTK88apXGucEEhYT5QkBBwoBKQ&S=AQAAAlxmCpqwT1RQ_PN78ljs15M; ucs=tr=1703864398000; A1S=d=AQABBP25OmQCEM1fKs_f0F5IGor0oJd7eQoFEgAACAGWW2WOZeWjJm0AAiAAAAcI-7k6ZKAwxK8ID6aTWTK88apXGucEEhYT5QkBBwoBKQ&S=AQAAAlxmCpqwT1RQ_PN78ljs15M; OTH=v=2&s=2&d=eyJraWQiOiIwMTY0MGY5MDNhMjRlMWMxZjA5N2ViZGEyZDA5YjE5NmM5ZGUzZWQ5IiwiYWxnIjoiUlMyNTYifQ.eyJjdSI6eyJndWlkIjoiU1FMVUI1TldFRFlRWllQWUk1R0paM0VBMzQiLCJwZXJzaXN0ZW50Ijp0cnVlLCJzaWQiOiJQdVRzY3JreG45dHAifX0.aL3DqLsyGe2FGFI52l-sXeu7oiqbh23iMK8oqUynoSnv0Os9FqkMypPuWYAFXgIsv9KpTfHFSrBiT81MvQCpJPb7aaTWdDuTfekJU02Fcv2o6fi67-TkGPxiNdZLUhmFIjSPTiaNI9g_UcHgG7e1F8OJx818l-LnVvw-NsxlZJI; T=af=JnRzPTE3MDM3Nzc5OTgmcHM9YTZ3Rzd5RVl3ZUJZcERGcVNNV04uQS0t&d=bnMBeWFob28BZwFTUUxVQjVOV0VEWVFaWVBZSTVHSlozRUEzNAFhYwFBSklRa2l3NwFhbAFiYXJvaW4uZ3VpbGxhdW1lLnByb0BnbWFpbC5jb20Bc2MBZGVza3RvcF93ZWIBZnMBQjc5c0Y3cGtmeGJxAXp6AU9iWmpsQkE3RQFhAVFBRQFsYXQBeUtsV2xCAW51ATA-&kt=EAAOc8Oj8ssInHdj6kEY.TmuA--~I&ku=FAAtB6YVwbcKuzFd1pihJEOemxG1OXKSmVhpi1p0CeaXeYxpGPfCzVQ0U1gEDScW_ht1QUuH_ccmurjwiB24EDw.0dL_wyz_hoeSzQEq9YaSe_mBZqYbcNV1.E7SYJ79LNO79.hSOcS9TElGRIKxiHB99HYKN1aecOKkFZQYGll5AQ-~E; cmp=t=1703778001&j=1&u=1---&v=103; EuConsent=CPs8KYAPs8KYAAOACKFRDfCgAAAAAAAAACiQAAAAAABhoAMAARBQEQAYAAiCgKgAwABEFAA; PRF=t%3DMDT%252BCICHY%252BWFC-PL%252BNVDA%252BATE.PA%252BCOV.PA%252BFR.PA%252BSCR.PA%252BALO.PA%252BFDJ.PA%252BGFC.PA%252BWLN.PA%252BRE.PA%252BTEP.PA%252BNOKIA.PA%26newChartbetateaser%3D1",
             "Sec-Fetch-User": "?1",
             "Upgrade-Insecure-Requests": "1",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.54"
@@ -46,12 +46,13 @@ class YahooFinanceScraper:
 
         # Loop to scrap abbreviation of stock 
         for page in range(self.nb_page + 1):
-            response = requests.get(f"https://fr.finance.yahoo.com/screener/99b382c3-38c7-4b52-bd34-0c08ec1385af?count=100&offset={page*100}", headers=self.header)
+            response = requests.get(f"https://fr.finance.yahoo.com/screener/1afec95a-fe45-4ba2-bee3-5ef40bdf1322?count=100&offset={page*100}", headers=self.header)
             assert isinstance(response,requests.Response)
             
             soup = bs(response.text, "html.parser")
             for Mnemo in soup.find_all("a", attrs={"data-test": "quoteLink"}):
                 Mnemo_link.append(Mnemo.text)
+            
         return Mnemo_link
 
     def scraper_asset(self, Mnemo_link):
@@ -65,8 +66,10 @@ class YahooFinanceScraper:
         """
         
         #assertion
-        assert len(Mnemo_link)==0, "list is empty"
-        assert isinstance(Mnemo_link,list),"Must be a list"
+        if len(Mnemo_link)==0: 
+            raise ValueError("list is empty")
+        if not isinstance(Mnemo_link,list):
+            raise TypeError("Must be a list")
         
         # Instanciation des listes
         list_asset = []
@@ -117,3 +120,4 @@ class YahooFinanceScraper:
             
         #creation of csv with assets
         asset.to_csv("src/data/database/bourse.csv")
+        return asset

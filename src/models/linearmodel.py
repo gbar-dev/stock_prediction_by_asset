@@ -39,6 +39,7 @@ class LinearModels:
 
         self.variation = variation
 
+
     def scikit_linear_model(self):
         """Fits a linear regression model using scikit-learn on the provided data and prints the R-squared score."""
         # Split train set and test set
