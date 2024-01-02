@@ -1,5 +1,4 @@
 from data.make_dataset import YahooFinanceScraper
-from data.clean_dataset import Preprocessing
 from models.linearmodel import LinearModels
 import os
 import pandas as pd
@@ -23,27 +22,27 @@ def main():
         None
     """
     # if bourse.csv doesn't exist, run crawler
-    if not os.path.exists("src/data/database/bourse.csv"):
+    # if not os.path.exists("src/data/database/bourse.csv"):
         #crawler yahoo finance
-        scraper = YahooFinanceScraper(1)
-        #scrap abbreviation
-        list_action = scraper.scraper_action()
-        #scrap assets
-        action_asset= scraper.scraper_asset(list_action)
-        action_asset,variation = Preprocessing(chemin="src/data/database/bourse.csv")
-        #instance linearmodels
-        model = LinearModels(action_asset,variation)
-        #linear models
-        scikit_model = model.scikit_linear_model()
-        sm_model = model.sm_linear_model()
-    # else, import csv 
-    else: 
-        action_asset,variation = Preprocessing(chemin="src/data/database/bourse.csv")
-        #instance linearmodels
-        model = LinearModels(action_asset,variation)
-        #linear models
-        scikit_model = model.scikit_linear_model()
-        sm_model = model.sm_linear_model()
+    scraper = YahooFinanceScraper(0)
+    #scrap abbreviation
+    list_action = scraper.scraper_action()
+    
+    #scrap assets
+    action_asset= scraper.scraper_asset(list_action)
+    #instance linearmodels
+    model = LinearModels(action_asset)
+    #linear models
+    scikit_model = model.scikit_linear_model()
+    sm_model = model.sm_linear_model()  
+    # # else, import csv 
+    # else: 
+    #     action_asset,variation = Preprocessing(chemin="src/data/database/bourse.csv")
+    #     #instance linearmodels
+    #     model = LinearModels(action_asset,variation)
+    #     #linear models
+    #     scikit_model = model.scikit_linear_model()
+    #     sm_model = model.sm_linear_model()
 
 
 if __name__ =="__main__":
